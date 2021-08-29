@@ -1,0 +1,85 @@
+body{
+    width: 1440px;
+}
+.main-container{
+    margin: 0;
+    padding: 10% 15%;
+    display: flex;
+    background: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+.main-container>div{
+    margin: 0;
+    padding: 5%;
+    color: hsl(0, 0%, 100%, 0.75);
+    width: 210px;
+    height: 330px;
+}
+.main-container>div>h2{
+    font-family: "Big", "Shoulders", "Display", sans-serif;
+    font-weight: 700;
+    margin: 10% 0 0 0;
+}
+.main-container>div>p{
+    font-family: "Lexend", "Deca", sans-serif;
+    font-weight: 400;
+    margin: 10% 0 40% 0;
+    line-height: 1.5em;
+}
+.main-container>div>a{
+    font-family: "Lexend", "Deca", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    background: hsl(0, 0%, 95%);
+    padding: 5% 15%;
+    border-radius: 25px;
+}
+.main-container>div>a:hover{
+    cursor: pointer;
+}
+.main-container>div:nth-child(1){
+    background: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+.main-container>div:nth-child(1)>a{
+    color: hsl(31, 77%, 52%);
+}
+.main-container>div:nth-child(2){
+    background: hsl(184, 100%, 22%);
+}
+.main-container>div:nth-child(2)>a{
+    color: hsl(184, 100%, 22%);
+}
+.main-container>div:nth-child(3){
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+.main-container>div:nth-child(3)>a{
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width:375px){
+    body{
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .main-container{
+        padding: 15% 5%;
+        flex-direction: column;
+    }
+    .main-container>div{
+        padding: 20%;
+        width: auto;
+        height: auto;
+    }
+    .main-container>div>p{
+        margin: 10% 0 15% 0;
+    }
+    .main-container>div:nth-child(1){
+        border-radius: 10px 10px 0 0;
+    }
+    .main-container>div:nth-child(3){
+        border-radius: 0 0 10px 10px;
+    }
+}
